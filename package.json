@@ -1,0 +1,170 @@
+{
+  "name": "shoptet-theme-starter",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Starter Kit for Shoptet Custom Theme for Marketplace",
+  "keywords": [
+    "miranda media group",
+    "shoptet",
+    "fashion template",
+    "e-shop"
+  ],
+  "author": {
+    "name": "Baky Sultanov",
+    "email": "baky.sultanov@mirandamedia.cz",
+    "url": "https://github.com/bakysultanov"
+  },
+  "scripts": {
+    "copy": "grunt copy",
+    "start": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirandaMedia-Group/shoptet-theme-starter.git"
+  },
+  "homepage": "https://github.com/MirandaMedia-Group/shoptet-theme-starter#readme",
+  "bugs": {
+    "url": "https://github.com/MirandaMedia-Group/shoptet-theme-starter/issues"
+  },
+  "css": {
+    "options": {
+      "javascriptEnabled": true,
+      "compress": true,
+      "modifyVars": {
+        "fontPath": "./fonts/shoptet/",
+        "imgPath": "./img/"
+      }
+    },
+    "files": {
+      "dist/css/main.css": [
+        "./src/shoptet-assets/11/css/main.less",
+        "./src/shoptet-assets/11/css/modules/font-shoptet.less",
+        "./src/less/main.less"
+      ]
+    }
+  },
+  "js": {
+    "options": {
+      "separator": ";"
+    },
+    "uglify": {
+      "options": {
+        "mangle": false
+      },
+      "files": {
+        "dist/js/main.min.js": [
+          "dist/js/main.js"
+        ]
+      }
+    },
+    "src": [
+      "./src/shoptet-assets/00/js/modules/jquery.unveil.js",
+      "./src/shoptet-assets/00/js/bootstrap/transition.js",
+      "./src/shoptet-assets/00/js/bootstrap/carousel.js",
+      "./src/shoptet-assets/00/js/bootstrap/dropdown.js",
+      "./src/shoptet-assets/00/js/bootstrap/tab.js",
+      "./src/shoptet-assets/00/js/bootstrap/tooltip.js",
+      "./src/shoptet-assets/00/js/jqueryui/core.js",
+      "./src/shoptet-assets/00/js/jqueryui/widget.js",
+      "./src/shoptet-assets/00/js/jqueryui/mouse.js",
+      "./src/shoptet-assets/00/js/jqueryui/position.js",
+      "./src/shoptet-assets/00/js/jqueryui/autocomplete.js",
+      "./src/shoptet-assets/00/js/jqueryui/button.js",
+      "./src/shoptet-assets/00/js/jqueryui/datepicker.js",
+      "./src/shoptet-assets/00/js/jqueryui/i18n/datepicker-cs.js",
+      "./src/shoptet-assets/00/js/jqueryui/menu.js",
+      "./src/shoptet-assets/00/js/jqueryui/selectmenu.js",
+      "./src/shoptet-assets/00/js/jqueryui/slider.js",
+      "./src/shoptet-assets/00/js/modules/jquery.ui.touch-punch.js",
+      "./src/shoptet-assets/00/js/modules/jquery.colorbox.js",
+      "./src/shoptet-assets/00/js/libs/scripts.js",
+      "./src/shoptet-assets/00/js/libs/dev.js",
+      "./src/shoptet-assets/00/js/libs/config.js",
+      "./src/shoptet-assets/00/js/libs/runtime.js",
+      "./src/shoptet-assets/00/js/libs/modal.js",
+      "./src/shoptet-assets/00/js/libs/common.js",
+      "./src/shoptet-assets/00/js/libs/custom.js",
+      "./src/shoptet-assets/00/js/libs/cookie.js",
+      "./src/shoptet-assets/00/js/libs/helpers.js",
+      "./src/shoptet-assets/00/js/libs/tracking.js",
+      "./src/shoptet-assets/00/js/libs/image360.js",
+      "./src/shoptet-assets/00/js/libs/stockAvailabilities.js",
+      "./src/shoptet-assets/00/js/libs/variants/surcharges.js",
+      "./src/shoptet-assets/00/js/libs/variants/common.js",
+      "./src/shoptet-assets/00/js/libs/variants/simple.js",
+      "./src/shoptet-assets/00/js/libs/variants/split.js",
+      "./src/shoptet-assets/00/js/libs/variants/unavailable.js",
+      "./src/shoptet-assets/00/js/libs/ajax/request.js",
+      "./src/shoptet-assets/00/js/libs/ajax/response.js",
+      "./src/shoptet-assets/00/js/libs/cart.js",
+      "./src/shoptet-assets/00/js/libs/cartShared.js",
+      "./src/shoptet-assets/00/js/libs/validator/helpers.js",
+      "./src/shoptet-assets/00/js/libs/validator/validator.js",
+      "./src/shoptet-assets/00/js/libs/validator/phone.js",
+      "./src/shoptet-assets/00/js/libs/validator/zipcode.js",
+      "./src/shoptet-assets/00/js/libs/validator/companyid.js",
+      "./src/shoptet-assets/00/js/libs/validator/required.js",
+      "./src/shoptet-assets/00/js/libs/phoneInput.js",
+      "./src/shoptet-assets/00/js/libs/cofidis.js",
+      "./src/shoptet-assets/00/js/libs/adminBar.js",
+      "./src/shoptet-assets/00/js/modules/validator.js",
+      "./src/shoptet-assets/00/js/modules/jquery.cloud-zoom.1.0.2.js",
+      "./src/shoptet-assets/00/js/modules/cloudZoomInit.js",
+      "./src/shoptet-assets/00/js/modules/tabsAccordion.js",
+      "./src/shoptet-assets/00/js/modules/tabsResponsive.js",
+      "./src/shoptet-assets/00/js/modules/topNavigationMenu.js",
+      "./src/shoptet-assets/00/js/modules/globalFunctions.js",
+      "./src/shoptet-assets/00/js/modules/menu.js",
+      "./src/shoptet-assets/00/js/modules/products.js",
+      "./src/shoptet-assets/00/js/modules/search.js",
+      "./src/shoptet-assets/00/js/modules/filters.js",
+      "./src/shoptet-assets/00/js/modules/productInnerSecondImage.js",
+      "./src/shoptet-assets/00/js/modules/smartLabels.js",
+      "./src/shoptet-assets/00/js/libs/checkout.js",
+      "./src/shoptet-assets/00/js/modules/twisto.js"
+    ],
+    "dest": "dist/js/main.js"
+  },
+  "watch": {
+    "options": {
+      "livereload": true
+    },
+    "scripts": {
+      "files": [
+        "src/js/*.js"
+      ],
+      "tasks": [
+        "concat",
+        "uglify"
+      ],
+      "options": {
+        "spawn": false
+      }
+    },
+    "css": {
+      "files": [
+        "src/less/*.less"
+      ],
+      "tasks": [
+        "less"
+      ],
+      "options": {
+        "spawn": false
+      }
+    }
+  },
+  "copy": {
+    "main": {
+      "src": "./src/index.html",
+      "dest": "./dist/index.html"
+    }
+  },
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

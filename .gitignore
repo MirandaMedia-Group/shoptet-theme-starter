@@ -1,0 +1,6 @@
+node_modules/
+userConfig.json
+dist/
+.idea/
+.vscode/
+.DS_Store

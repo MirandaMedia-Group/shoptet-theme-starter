@@ -46,5 +46,4 @@ module.exports = function (grunt) {
   grunt.registerTask('compile-css', ['less:css']);
   grunt.registerTask('concat-js', ['concat:dist']);
   grunt.registerTask('uglify-js', ['uglify:dist']);
-
 };

@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         ...pkg.copy.main,
         options: {
           process: function (content, _) {
-            return content.replace(/\.\.\/src\/|\.\.\/dist\//gi, "./dist/");
+            return content.replace(/\.\.\/src\/|\.\.\/dist\//gi, './');
           },
         },
       },

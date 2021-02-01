@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         ...pkg.copy.main,
         options: {
           process: function (content, _) {
-            return content.replace(/\.\.\/src\/|\.\.\/dist\//gi, "./dist/");
+            return content.replace(/\.\.\/src\/|\.\.\/dist\//gi, "./");
           },
         },
       },
@@ -46,5 +46,4 @@ module.exports = function (grunt) {
   grunt.registerTask('compile-css', ['less:css']);
   grunt.registerTask('concat-js', ['concat:dist']);
   grunt.registerTask('uglify-js', ['uglify:dist']);
-
 };

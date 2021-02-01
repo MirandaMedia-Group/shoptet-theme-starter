@@ -24,7 +24,16 @@ module.exports = function (grunt) {
         files: pkg.js.uglify.files
       }
     },
-    copy: pkg.copy,
+    copy: {
+      main: {
+        ...pkg.copy.main,
+        options: {
+          process: function (content, _) {
+            return content.replace(/\.\.\/src\/|\.\.\/dist\//gi, "./dist/");
+          },
+        },
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');

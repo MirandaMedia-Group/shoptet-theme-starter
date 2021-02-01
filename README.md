@@ -9,5 +9,5 @@ npm install
 ## Usage
 
 ```javascript
-grunt
+npm start
 ```

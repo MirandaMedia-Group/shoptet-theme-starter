@@ -155,6 +155,7 @@
   },
   "copy": {
     "main": {
+      "nonull": true,
       "src": "./src/index.html",
       "dest": "./dist/index.html"
     }
